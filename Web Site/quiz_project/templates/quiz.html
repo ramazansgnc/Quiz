@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Quiz</h1>
+    <form action="{{ url_for('submit') }}" method="POST">
+        <p>1. Python'da makine öğrenmesi algoritmalarını eğitmek için hangi kütüphaneler kullanılır?</p>
+        <input type="radio" name="question_1" value="NumPy, Pandas, TensorFlow"> A) NumPy, Pandas, TensorFlow<br>
+        <input type="radio" name="question_1" value="Matplotlib, Seaborn, OpenCV"> B) Matplotlib, Seaborn, OpenCV<br>
+        <input type="radio" name="question_1" value="Flask, Django, Keras"> C) Flask, Django, Keras<br>
+        <input type="radio" name="question_1" value="SQLite, MySQL, PostgreSQL"> D) SQLite, MySQL, PostgreSQL<br>
+        
+        <p>2. Hangi algoritma, bir görüntüyü nesnelerine ayırmak için bilgisayar görüşü projelerinde sıkça kullanılır?</p>
+        <input type="radio" name="question_2" value="K-Means Kümeleme"> A) K-Means Kümeleme<br>
+        <input type="radio" name="question_2" value="YOLO (You Only Look Once)"> B) YOLO (You Only Look Once)<br>
+        <input type="radio" name="question_2" value="LSTM"> C) LSTM<br>
+        <input type="radio" name="question_2" value="KNN (K-Nearest Neighbors)"> D) KNN (K-Nearest Neighbors)<br>
+
+        <p>3. Doğal dil işleme (NLP) nedir?</p>
+        <input type="radio" name="question_3" value="İnsan dilini makineler aracılığıyla analiz etme"> A) İnsan dilini makineler aracılığıyla analiz etme<br>
+        <input type="radio" name="question_3" value="Görüntüleri analiz etme"> B) Görüntüleri analiz etme<br>
+        <input type="radio" name="question_3" value="Ses tanıma"> C) Ses tanıma<br>
+        <input type="radio" name="question_3" value="Matematiksel modeller oluşturma"> D) Matematiksel modeller oluşturma<br>
+
+        <p>4. Bir yapay zeka modelinin doğruluğunu ölçmek için yaygın olarak kullanılan metriklerden biri nedir?</p>
+        <input type="radio" name="question_4" value="F1 skoru"> A) F1 skoru<br>
+        <input type="radio" name="question_4" value="Normal dağılım"> B) Normal dağılım<br>
+        <input type="radio" name="question_4" value="Konverjans"> C) Konverjans<br>
+        <input type="radio" name="question_4" value="Linear regresyon"> D) Linear regresyon<br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
